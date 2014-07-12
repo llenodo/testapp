@@ -1,4 +1,5 @@
 ActiveAdmin.register Company do
+  permit_params :name, :tagline, :logo_url, :city, :state, :description, :url, :jobs_url
 
   
   # See permitted parameters documentation:
