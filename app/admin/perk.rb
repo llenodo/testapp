@@ -1,4 +1,5 @@
 ActiveAdmin.register Perk do
+  permit_params :title, :icon
 
   
   # See permitted parameters documentation:
