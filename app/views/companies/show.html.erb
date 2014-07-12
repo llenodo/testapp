@@ -1,0 +1,44 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @company.name %>
+</p>
+
+<p>
+  <strong>Tagline:</strong>
+  <%= @company.tagline %>
+</p>
+
+<p>
+  <strong>Logo url:</strong>
+  <%= @company.logo_url %>
+</p>
+
+<p>
+  <strong>City:</strong>
+  <%= @company.city %>
+</p>
+
+<p>
+  <strong>State:</strong>
+  <%= @company.state %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @company.description %>
+</p>
+
+<p>
+  <strong>Url:</strong>
+  <%= @company.url %>
+</p>
+
+<p>
+  <strong>Jobs url:</strong>
+  <%= @company.jobs_url %>
+</p>
+
+<%= link_to 'Edit', edit_company_path(@company) %> |
+<%= link_to 'Back', companies_path %>
