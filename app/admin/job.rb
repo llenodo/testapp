@@ -1,4 +1,5 @@
 ActiveAdmin.register Job do
+  permit_params :title
 
   
   # See permitted parameters documentation:
