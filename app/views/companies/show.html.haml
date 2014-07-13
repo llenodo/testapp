@@ -1,0 +1,31 @@
+.page-header
+  %h1= t '.title', default: Company
+.fieldset
+  %dl
+    %dt.label.label-default= Company.human_attribute_name(:name)
+    %dd
+      %pre.prettyprint= @company.name
+    %dt.label.label-default= Company.human_attribute_name(:tagline)
+    %dd
+      %pre.prettyprint= @company.tagline
+    %dt.label.label-default= Company.human_attribute_name(:logo_url)
+    %dd
+      %pre.prettyprint= @company.logo_url
+    %dt.label.label-default= Company.human_attribute_name(:city)
+    %dd
+      %pre.prettyprint= @company.city
+    %dt.label.label-default= Company.human_attribute_name(:state)
+    %dd
+      %pre.prettyprint= @company.state
+    %dt.label.label-default= Company.human_attribute_name(:description)
+    %dd= raw markdown(@company.description)
+    %dt.label.label-default= Company.human_attribute_name(:url)
+    %dd
+      %pre.prettyprint= @company.url
+    %dt.label.label-default= Company.human_attribute_name(:jobs_url)
+    %dd
+      %pre.prettyprint= @company.jobs_url
+.form-group
+  = link_to t('.back', :default => t("helpers.links.back")), companies_path, :class => 'btn btn-default'
+  = link_to t('.edit', :default => t("helpers.links.edit")), edit_company_path(@company), :class => 'btn btn-default'
+  = link_to t('.destroy', :default => t("helpers.links.destroy")), company_path(@company), :method => 'delete', :data => { :confirm => t('.confirm', :default => t("helpers.links.confirm", :default => 'Are you sure?')) }, :class => 'btn btn-danger'

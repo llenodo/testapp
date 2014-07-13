@@ -41,6 +41,7 @@ gem 'spring',        group: :development
 gem 'bundler'
 
 gem 'redcarpet'
+gem 'haml'
 
 gem 'activeadmin', github: 'gregbell/active_admin'
 gem 'devise', github: 'plataformatec/devise'
