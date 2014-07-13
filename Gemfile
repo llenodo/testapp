@@ -40,6 +40,8 @@ gem 'spring',        group: :development
 
 gem 'bundler'
 
+gem 'redcarpet'
+
 gem 'activeadmin', github: 'gregbell/active_admin'
 gem 'devise', github: 'plataformatec/devise'
 gem 'bootstrap-sass', github: 'twbs/bootstrap-sass'
